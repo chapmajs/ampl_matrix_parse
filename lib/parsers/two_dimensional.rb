@@ -35,14 +35,6 @@ module AmplMatrix
           end
         end
       end
-
-      def to_csv
-        puts ",#{@result_hash.first[1].keys.join(',')}"
-
-        @result_hash.each do |label, row|
-          puts "#{label},#{row.values.join(',')}"
-        end
-      end
     end
   end
 end
